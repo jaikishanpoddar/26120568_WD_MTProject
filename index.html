@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jaikishan Poddar - Resume</title>
+<style>
+:root {
+--primary-color: #7c2d12;
+--accent-color: #c2410c;
+--bg-color: #0f2c24;
+--card-bg: #fefae0;
+--card-alt: #f4ebd0;
+--text-color: #292524;
+--text-muted: #78716c;
+--border-color: #d8cbb8;
+}
+body {
+font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+margin: 0;
+padding: 0;
+background-color: var(--bg-color);
+color: var(--text-color);
+line-height: 1.6;
+}
+header {
+background: linear-gradient(135deg, var(--primary-color), #431407);
+color: #ffffff;
+text-align: center;
+padding: 3rem 1rem;
+box-shadow: inset 0 -4px 0 var(--accent-color);
+}
+header h1 {
+margin: 0;
+font-size: 2.8rem;
+letter-spacing: 1.5px;
+font-weight: 700;
+}
+header p.tagline {
+font-size: 1.25rem;
+color: #fed7aa;
+margin-top: 0.5rem;
+margin-bottom: 1.5rem;
+font-weight: 500;
+}
+.profile-container {
+margin-top: 1rem;
+}
+.profile-img {
+width: 140px;
+height: 140px;
+border-radius: 50%;
+object-fit: cover;
+border: 4px solid #fed7aa;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+transition: transform 0.3s ease;
+}
+.profile-img:hover {
+transform: scale(1.05);
+}
+nav {
+background-color: var(--primary-color);
+padding: 0.85rem;
+text-align: center;
+position: sticky;
+top: 0;
+z-index: 1000;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 15px;
+}
+nav a {
+color: #ffffff;
+text-decoration: none;
+font-weight: 600;
+font-size: 0.95rem;
+transition: color 0.2s ease;
+}
+nav a:hover {
+color: #fed7aa;
+}
+main {
+max-width: 950px;
+margin: 2.5rem auto;
+padding: 0 1.5rem;
+}
+section {
+background: var(--card-bg);
+padding: 2.5rem;
+margin-bottom: 2rem;
+border-radius: 12px;
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+border-top: 4px solid var(--primary-color);
+border-left: 1px solid var(--border-color);
+border-right: 1px solid var(--border-color);
+border-bottom: 1px solid var(--border-color);
+transition: transform 0.2s ease;
+}
+section:hover {
+transform: translateY(-2px);
+}
+h2 {
+color: var(--primary-color);
+border-bottom: 2px solid var(--accent-color);
+padding-bottom: 0.5rem;
+margin-top: 0;
+font-size: 1.6rem;
+letter-spacing: 0.5px;
+}
+article {
+margin-bottom: 1.8rem;
+padding-bottom: 1.2rem;
+border-bottom: 1px dashed var(--border-color);
+}
+article:last-child {
+margin-bottom: 0;
+padding-bottom: 0;
+border-bottom: none;
+}
+.job-title, .project-title {
+font-weight: bold;
+color: var(--primary-color);
+font-size: 1.15rem;
+}
+.date {
+float: right;
+color: var(--text-muted);
+font-style: italic;
+font-size: 0.9rem;
+}
+.cert-container {
+margin-top: 1.5rem;
+text-align: center;
+background: var(--card-alt);
+padding: 1rem;
+border-radius: 8px;
+border: 1px solid var(--border-color);
+}
+.cert-embed {
+width: 100%;
+height: 500px;
+border: 1px solid var(--border-color);
+border-radius: 6px;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 1rem;
+border-radius: 8px;
+overflow: hidden;
+}
+table, th, td {
+border: 1px solid var(--border-color);
+}
+th, td {
+padding: 14px;
+text-align: left;
+}
+th {
+background-color: var(--card-alt);
+color: var(--primary-color);
+font-weight: 600;
+}
+td {
+background-color: var(--card-bg);
+}
+footer {
+text-align: center;
+padding: 2rem;
+background-color: var(--primary-color);
+color: #ffffff;
+margin-top: 3rem;
+font-size: 0.95rem;
+border-top: 4px solid var(--accent-color);
+}
+@media(max-width: 768px) {
+.date {
+float: none;
+display: block;
+margin-top: 0.25rem;
+}
+header h1 {
+font-size: 2.2rem;
+}
+section {
+padding: 1.5rem;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Jaikishan Poddar</h1>
+<p class="tagline">Aspiring Web Developer and Cricketer</p>
+<div class="profile-container">
+<img src="Jaikishan Passport Size Photo.jpeg" alt="Jaikishan Poddar Profile Picture" class="profile-img">
+</div>
+</header>
+<nav>
+<a href="#summary">Summary</a>
+<a href="#experience">Experience</a>
+<a href="#education">Education</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills & Certificates</a>
+<a href="#languages">Languages</a>
+<a href="#extracurriculars">Extracurriculars</a>
+</nav>
+<main>
+<section id="summary">
+<h2>Professional Summary</h2>
+<p>Driven and multi-disciplinary student pursuing concurrent degrees in Computer Science, Data Science, and Business Entrepreneurship. Combining technical curiosity in web development and AI platforms with the discipline, strategy, and teamwork honed as a passionate cricketer. Eager to leverage strong analytical skills, educational domain experience, and leadership to build impactful digital solutions.</p>
+</section>
+<section id="experience">
+<h2>Work Experience & Certifications</h2>
+<article>
+<span class="date">Issued: July 6, 2026</span>
+<p class="job-title">AI Content & Dataset Trainer (Intern) | Chalke.in</p>
+<ul>
+<li>Contributed to the development of an AI-powered education platform by supporting creation and quality assurance of STEM question banks.</li>
+<li>Reviewed AI-generated questions, identified and corrected inaccuracies, and organized educational content to improve overall content library quality.</li>
+<li>Demonstrated strong sincerity, attention to detail, and reliability throughout the one-month internship program.</li>
+</ul>
+<div class="cert-container">
+<embed src="Certificate_Jaikishan_Poddar_Chalke.pdf" type="application/pdf" class="cert-embed">
+<p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.75rem;">Certificate of Completion — Chalke.in (Signed by Founder Abhishek Sharma)</p>
+</div>
+</article>
+</section>
+<section id="education">
+<h2>Education History</h2>
+<article>
+<span class="date">Expected Graduation: 2028</span>
+<p class="job-title">Bachelor of Science (BSc) in Computer Science (Hons)</p>
+<p>RV University, Bengaluru</p>
+</article>
+<article>
+<span class="date">Online Degree Program</span>
+<p class="job-title">Bachelor of Science (BS) in Data Science and Applications</p>
+<p>Indian Institute of Technology (IIT), Madras</p>
+</article>
+<article>
+<span class="date">Online Degree Program</span>
+<p class="job-title">Bachelor of Business Administration in Digital Business and Entrepreneurship (BBA DBE)</p>
+<p>Indian Institute of Management (IIM), Bangalore</p>
+</article>
+<article>
+<span class="date">Grades 11 & 12</span>
+<p class="job-title">Senior Secondary Education</p>
+<p>Delhi Public School (DPS) East, Bengaluru</p>
+</article>
+<article>
+<span class="date">Grades 1 to 10</span>
+<p class="job-title">Primary & Secondary Schooling</p>
+<p>EuroSchool, Whitefield, Bengaluru</p>
+</article>
+</section>
+<section id="projects">
+<h2>Projects</h2>
+<article>
+<span class="date">Current Project</span>
+<p class="project-title">Personal Resume Portfolio Website</p>
+<p>Designed and built a responsive, multi-section personal resume website utilizing semantic HTML and modern CSS styling to showcase professional qualifications, academic milestones, and athletic achievements.</p>
+<p><strong>Tools Used:</strong> HTML5, CSS3, Flexbox, Git, GitHub Pages</p>
+</article>
+</section>
+<section id="skills">
+<h2>Skills & Certifications Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Category / Item</th>
+<th>Details / Issuer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Certifications</td>
+<td>Certificate of Completion (One-Month Internship) — Chalke.in (Signed by Founder Abhishek Sharma)</td>
+</tr>
+<tr>
+<td>Core Skills & Expertise</td>
+<td>Cricket (Advanced Teamwork, Strategic Discipline, & Leadership), AI Quality Assurance & Prompting, STEM Content Organization</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="languages">
+<h2>Languages Known</h2>
+<p><strong>English</strong> (Fluent / Professional Working) &nbsp;|&nbsp; <strong>Hindi</strong> (Native / Professional Working)</p>
+</section>
+<section id="extracurriculars">
+<h2>Extracurricular Activities & Hobbies</h2>
+<ul>
+<li><strong>Athletics & Sports:</strong> Deeply passionate about playing all kinds of sports, with a special dedication to cricket—showcasing teamwork, mental discipline, and athletic drive.</li>
+<li><strong>Family & Support:</strong> Actively assist and support my mother and father in their work, valuing responsibility, diligence, and family collaboration.</li>
+</ul>
+</section>
+</main>
+<footer>
+<p>&copy; 2026 Jaikishan Poddar. Hosted live via GitHub Pages.</p>
+</footer>
+</body>
+</html>
